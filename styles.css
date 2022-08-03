@@ -70,25 +70,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-body.dark-blue{
-  --bg-color: #00082F;
-  --text-color: #FFFFFF;
-  --primary-color: #4263EB;
-  --secondary-color: #364fc7;
-}
-
-body.pink{
-  --bg-color: #FFF0F6;
-  --text-color: #1F000B;
-  --primary-color: #D6336C;
-  --secondary-color: #A61E40;
-}
-
 body.clear{
   --bg-color: #b8defb;
   --text-color: #1F000B;
   --primary-color: #3f515b;
   --secondary-color: #323c4c;
+  
+  transition: background 400ms; 
 }
 
 body.dark{
@@ -96,6 +84,7 @@ body.dark{
   --text-color: #ababab;
   --primary-color: #6a6a6a;
   --secondary-color: #3b3b3b;
+  transition: background 400ms;
 }
 
 a {
@@ -108,10 +97,30 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.setTheme {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: left-side;
+  
+}
+
 .container {
   text-align: center;
   width: 300px;
   margin: 60px auto;
+}
+
+img.iconsThemeClear {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0.7px;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: background 400ms;
 }
 
 img{
